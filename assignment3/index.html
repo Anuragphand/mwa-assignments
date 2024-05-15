@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle button</title>
+    <style>
+        .toggle {
+            background-color: #f4f4f4;
+            padding: 20px;
+            margin: 20px auto;
+            width: 200px;
+            text-align: center;
+        }
+
+        .highlighted {
+            background-color: #ffcc00; /* Yellow */
+        }
+    </style>
+</head>
+<body>
+    <div id="toggleDiv" class="toggle">
+        This is a div that can be toggled.
+    </div>
+    <button onclick="toggleClass()">Toggle Class</button>
+
+    <script>
+        function toggleClass() {
+            var element = document.getElementById("toggleDiv");
+            element.classList.toggle("highlighted");
+        }
+    </script>
+</body>
+</html>
