@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+    <title>AngularJS Multiple Views Example</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="app.js"></script>
+</head>
+<body>
+
+<div ng-controller="MainController">
+    <a href="#/view1">View 1</a>
+    <a href="#/view2">View 2</a>
+    <div ng-view></div>
+</div>
+
+</body>
+</html>
